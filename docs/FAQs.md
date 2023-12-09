@@ -19,7 +19,7 @@ Welcome to the Frequently Asked Questions (FAQs) for the StarNotary DApp. This s
 
 ### Technical Questions
 #### Q1: How do I connect my wallet to the DApp?
-**A:** Open the DApp in your browser, click on the 'Create Star' button, and follow the prompts in your Ethereum wallet extension (e.g., MetaMask).
+**A:** Open the DApp in your browser, click on the 'Connect to MetaMask' button, and follow the prompts in your Ethereum wallet extension (e.g., MetaMask).
 
 #### Q2: Can I buy a star without ETH?
 **A:** No, buying a star requires ETH to pay for the star and cover the transaction fees.

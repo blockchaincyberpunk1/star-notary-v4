@@ -899,6 +899,7 @@ const starTokenIdInfo = document.getElementById('starTokenIdInfo');
 const starNameInfo = document.getElementById('starNameInfo');
 const starOwnerInfo = document.getElementById('starOwnerInfo');
 const starPriceInfo = document.getElementById('starPriceInfo');
+const connectWalletButton = document.getElementById('connectButton');
 
 // Event listeners for form submissions
 createStarForm.addEventListener('submit', createStar);
@@ -907,6 +908,8 @@ buyStarForm.addEventListener('submit', buyStar);
 exchangeStarsForm.addEventListener('submit', exchangeStars);
 transferStarForm.addEventListener('submit', transferStar);
 lookUpStarForm.addEventListener('submit', lookUpStar);
+// Event listener for the connect button
+connectWalletButton.addEventListener('click', connectToMetaMask);
 
 // Function to create a star
 async function createStar(event) {
@@ -1023,6 +1026,24 @@ async function updateStarInfo(tokenId) {
       starPriceInfo.innerText = '';
   }
 }
+
+// Function to connect to MetaMask
+async function connectToMetaMask() {
+  if (typeof window.ethereum !== 'undefined') {
+    try {
+      // Request account access
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      // Update button text upon successful connection
+      document.getElementById('connectButton').innerText = 'Connected';
+    } catch (error) {
+      console.error("User denied account access");
+    }
+  } else {
+    console.error("MetaMask is not installed");
+    alert("Please install MetaMask to use this DApp");
+  }
+}
+
 
 // Initial update with a specific Token ID (if needed)
 // updateStarInfo(1);

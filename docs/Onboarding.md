@@ -11,7 +11,7 @@ Welcome to the StarNotary DApp! This guide is designed to help first-time users 
 
 ### Step 2: Accessing the StarNotary DApp
 - **Open the DApp**: Visit the StarNotary DApp website.
-- **Connect Your Wallet**: Click on the 'Create Star' button and follow the prompts to connect your Ethereum wallet to the DApp.
+- **Connect Your Wallet**: Click on the 'Connect to MetaMask' button and follow the prompts to connect your Ethereum wallet to the DApp.
 
 ### Step 3: Navigating the Interface
 - **Explore the Interface**: Familiarize yourself with the DApp's layout, including sections for creating, buying, selling, and exchanging stars.
