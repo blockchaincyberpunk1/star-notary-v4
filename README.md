@@ -43,6 +43,9 @@ StarNotary DApp is a decentralized application that allows users to create, buy,
 - **Procyon** (ID:
 1618153251514)
 
+<p align="center"><img alt="StarNotary Dapp" [Screenshot] src="./frontend/screenshot8.png"><br>
+StarNotary Dapp </p>
+
 ## Installation
 
 To set up the StarNotary DApp locally, follow these steps:
