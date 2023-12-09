@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarNotary DApp</title>
+    <!-- Bootstrap CSS for styling -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main title -->
+      <h1 class="text-center mt-5">StarNotary DApp</h1>
+
+      <!-- Section for creating a new star -->
+      <div class="row mt-4">
+        <div class="col">
+          <h2>Create Star</h2>
+          <form id="createStarForm">
+            <div class="form-group">
+              <label for="starName">Star Name:</label>
+              <input type="text" class="form-control" id="starName" />
+            </div>
+            <div class="form-group">
+              <label for="starId">Star ID:</label>
+              <input type="number" class="form-control" id="starId" />
+            </div>
+            <button type="submit" class="btn btn-primary">Create Star</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Section for putting a star up for sale -->
+      <div class="row mt-4">
+        <div class="col">
+          <h2>Put Star Up for Sale</h2>
+          <form id="sellStarForm">
+            <div class="form-group">
+              <label for="saleStarId">Star ID:</label>
+              <input type="number" class="form-control" id="saleStarId" />
+            </div>
+            <div class="form-group">
+              <label for="starPrice">Price (in Ether):</label>
+              <input type="text" class="form-control" id="starPrice" />
+            </div>
+            <button type="submit" class="btn btn-success">Sell Star</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Section for buying a star -->
+      <div class="row mt-4">
+        <div class="col">
+          <h2>Buy Star</h2>
+          <form id="buyStarForm">
+            <div class="form-group">
+              <label for="buyStarId">Star ID:</label>
+              <input type="number" class="form-control" id="buyStarId" />
+            </div>
+            <button type="submit" class="btn btn-warning">Buy Star</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Section for exchanging stars -->
+      <div class="row mt-4">
+        <div class="col">
+          <h2>Exchange Stars</h2>
+          <form id="exchangeStarsForm">
+            <div class="form-group">
+              <label for="starId1">Star ID 1:</label>
+              <input type="number" class="form-control" id="starId1" />
+            </div>
+            <div class="form-group">
+              <label for="starId2">Star ID 2:</label>
+              <input type="number" class="form-control" id="starId2" />
+            </div>
+            <button type="submit" class="btn btn-info">Exchange Stars</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Section for transferring a star -->
+      <div class="row mt-4">
+        <div class="col">
+          <h2>Transfer Star</h2>
+          <form id="transferStarForm">
+            <div class="form-group">
+              <label for="transferStarId">Star ID:</label>
+              <input type="number" class="form-control" id="transferStarId" />
+            </div>
+            <div class="form-group">
+              <label for="transferAddress">Address to Transfer:</label>
+              <input type="text" class="form-control" id="transferAddress" />
+            </div>
+            <button type="submit" class="btn btn-secondary">
+              Transfer Star
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Section for looking up a star -->
+      <div class="row mt-4">
+        <div class="col">
+          <h2>Look Up Star</h2>
+          <form id="lookUpStarForm">
+            <div class="form-group">
+              <label for="lookUpStarId">Star ID:</label>
+              <input type="number" class="form-control" id="lookUpStarId" />
+            </div>
+            <button type="submit" class="btn btn-info">Look Up Star</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Section to display star information -->
+      <div id="starInfo" class="mt-5">
+        <h2>Star Information</h2>
+        <p><strong>Token ID:</strong> <span id="starTokenIdInfo"></span></p>
+        <p><strong>Star Name:</strong> <span id="starNameInfo"></span></p>
+        <p><strong>Owner:</strong> <span id="starOwnerInfo"></span></p>
+        <p>
+          <strong>Price (in Ether):</strong> <span id="starPriceInfo"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Importing Web3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.0/web3.min.js"></script>
+    <!-- Linking to the app.js script -->
+    <script src="app.js"></script>
+  </body>
+</html>
