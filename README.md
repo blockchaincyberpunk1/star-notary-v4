@@ -17,8 +17,8 @@
   - [Contact](#contact)
   - [License](#license)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/blockchaincyberpunk1/star-notary-v4/tree/master)
-![GitHub top language](https://img.shields.io/github/languages/top/blockchaincyberpunk1/star-notary-v4/tree/master)
+![GitHub repo size](https://img.shields.io/github/repo-size/blockchaincyberpunk1/star-notary-v4?style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/blockchaincyberpunk1/star-notary-v4?style=plastic)
 
 ## Description
 
