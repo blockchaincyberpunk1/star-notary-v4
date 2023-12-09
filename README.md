@@ -88,7 +88,7 @@ To set up the StarNotary DApp locally, follow these steps:
 
 ## Deployed Website Link
 
-[StarNotary DApp](#) <!-- Replace '#' with the actual link to the deployed website -->
+[StarNotary DApp](https://blockchaincyberpunk1.github.io/star-notary-v4-frontend) 
 
 ## Contribution
 

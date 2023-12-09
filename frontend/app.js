@@ -878,7 +878,7 @@ const contractABI = [
     "name": "transferStar",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function"  
   }
 ];
 
